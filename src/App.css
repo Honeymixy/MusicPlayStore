@@ -67,12 +67,12 @@ body{
 .orderborder{
   border: none;
 }
-.canclebtn{
+.cancelbtn{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.canclebtn button{
+.cancelbtn button{
   width: 20rem ;
   height: 2.5rem;
   margin: 2px; 
@@ -93,11 +93,11 @@ button:hover{
   flex-direction: column;
   margin-top: 2rem;
 }
-.canclebtn a {
+.cancelbtn a {
   text-decoration: none;
   margin: 1rem;
 }
-.canclebtn a:hover{
+.cancelbtn a:hover{
   color: red;
   font-size: 18px;
 }
@@ -110,7 +110,7 @@ button:hover{
 body{
   padding: 0 20px;
 }
-.canclebtn button{
+.cancelbtn button{
   max-width: 15rem;
 }
 }
