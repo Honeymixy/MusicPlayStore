@@ -9,25 +9,26 @@ const Order = () => {
     currency: "$",
   });
   function Newplanbtn() {
-    if (price.Amount === 59.99) {
+    if (price.plan === 'Annual Plan') {
       setPrice({
         plan: "Monthly Plan",
         Amount: 4.99,
         currency: "$",
-        subscription: "Monthly",
+        subscription: "/Months",
       });
     } else {
       setPrice({
-        plan: "Annual plan",
+        plan: "Annual Plan",
         Amount: 59.99,
         currency: "$",
         subscription: "/year",
       });
     }
   }
-  function Canclebtn() {
+  function cancelbtn() {
     setPrice([]);
   }
+ 
   return (
     <div className="order">
       {OrderPlan.map((Singleplan) => {
@@ -47,19 +48,20 @@ const Order = () => {
                 </div>
               </div>
               <a href="##" onClick={Newplanbtn}>
-                Change
+              Change
               </a>
             </div>
-            <div className="canclebtn">
+            <div className="cancelbtn">
               <button>Proceed to payment</button>
-              <a href="##" onClick={Canclebtn}>
-                Cancle Plan
+              <a href="##" onClick={cancelbtn}>
+                Cancel Plan
               </a>
             </div>
           </div>
         );
-      })}
+      })}      
     </div>
+    
   );
 };
 
